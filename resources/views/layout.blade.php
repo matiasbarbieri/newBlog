@@ -5,14 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Zendero</title>
-    @vite(['resources/sass/app.scss', 'resources/css/app.css',  'resources/js/app.js'])
+
+    @vite(['resources/sass/app.scss', 'resources/css/app.css',  'resources/js/app.js', 'resources/css/normalize.css', 'resources/css/framework.css',  'resources/css/style.css', 'resources/css/responsive.css'])
     <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('resources/js/app.js') }}">
     <link rel="stylesheet" href="{{ asset('resources/sass/app.scss') }}">
-    {{-- <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/framework.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css"> --}}
+    <link rel="stylesheet" href="{{ asset('resources/css/normalize.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/framework.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/responsive.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -33,8 +34,8 @@
 		</div>
 	</header>
 
-    {{--contenido de la pagina --}}
-    @yield('content')
+{{--contenido de la pagina --}}
+@yield('content')
 
     <section class="footer">
 		<footer>

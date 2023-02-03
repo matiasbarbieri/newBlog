@@ -20,6 +20,10 @@
         </div>
     </div>
 </div>
-    <link rel = "stylesheet" href = "{{ asset('resources/css/app.css') }}">
+    <link rel="stylesheet" href ="{{ asset('resources/css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('resources/js/app.js') }}">
+    <link rel="stylesheet" href="{{ asset('resources/css/normalize.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/framework.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/responsive.css') }}">
 @endsection

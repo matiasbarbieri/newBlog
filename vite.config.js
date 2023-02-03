@@ -7,11 +7,13 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/sass/app.scss',
-<<<<<<< HEAD
                 'resources/css/app.css',
-=======
->>>>>>> 7a9209c016b1d6d79a787aa30c31e9137a8c7084
                 'resources/js/app.js',
+                'resources/css/framework.css',
+                'resources/css/normalize.css',
+                'resources/css/responsive.css',
+                'resources/css/style.css',
+
             ],
             refresh: true,
         }),

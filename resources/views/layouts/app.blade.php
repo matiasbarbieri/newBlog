@@ -14,9 +14,14 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/css/app.css',  'resources/js/app.js'])
-
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/css/app.css',  'resources/js/app.js', 'resources/css/normalize.css', 'resources/css/framework.css',  'resources/css/style.css', 'resources/css/responsive.css'])
+    <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('resources/js/app.js') }}">
+    <link rel="stylesheet" href="{{ asset('resources/sass/app.scss') }}">
+    <link rel="stylesheet" href="{{ asset('resources/css/normalize.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/framework.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('resources/css/responsive.css') }}">
 </head>
 <body>
     <div id="app">
